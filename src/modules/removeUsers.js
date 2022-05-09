@@ -9,8 +9,8 @@ export const removeUsers = () => {
             const id = tr.dataset.key;
             
             userService.removeUser(id)
-            .then(res => userService.getUsers()
-            .then(users => render(users)));
+            .then(res => userService.getUsers())
+            .then(users => render(users));
         }
     });
 };

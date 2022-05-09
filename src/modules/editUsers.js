@@ -37,11 +37,11 @@ export const editUsers = () => {
             
             userService.editUser(id, user)
             .then(() => {
-                userService.getUsers()
+                userService.getUsers();})
                 .then(users => {
                     render(users);
                     form.reset();
-                    form.removeAttribute('data-method');});
+                    form.removeAttribute('data-method');
             });
         }    
     }); 

@@ -43,4 +43,19 @@ export class UserService {
             body: JSON.stringify(user)
         }).then(res => res.json());
     }
+
+    filterUsers(filterOption) {
+        return fetch(`http://localhost:3232/users?${filterOption}=true`)
+        .then(res => res.json());
+    }
+ 
+    getSortUsers(sortOption) {
+        return fetch(`http://localhost:3232/users?_sort=${sortOption.name}&_order=${sortOption.value}`)
+        .then(res => res.json());
+    }
+
+    getSearchUsers(str) {
+        return fetch(`http://localhost:3232/users?name_like=${str}`)
+        .then(res => res.json());
+    }
 }
