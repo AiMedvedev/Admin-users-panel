@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "name": "Alex",
+      "email": "alex@alex.com",
+      "children": true,
+      "permissions": false,
+      "id": 2
+    },
+    {
+      "name": "Ivan2",
+      "email": "ffg@ere",
+      "children": true,
+      "permissions": false,
+      "id": 5
+    },
+    {
+      "name": "Alex2",
+      "email": "alex@alex.com",
+      "children": true,
+      "permissions": false,
+      "id": 6
+    }
+  ]
+}
