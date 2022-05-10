@@ -12,7 +12,7 @@ export const editUsers = () => {
             const tr = event.target.closest('tr');
             const id = tr.dataset.key;
 
-            userService.getUser(id)
+            userService.getData(`http://localhost:3232/users/${id}`)
             .then(user => {
                 nameInput.value = user.name;
                 emailInput.value = user.email;
@@ -35,9 +35,9 @@ export const editUsers = () => {
                 permissions: false  
             };
             
-            userService.editUser(id, user)
+            userService.sendData('PUT', user, `http://localhost:3232/users/${id}`)
             .then(() => {
-                userService.getUsers();})
+                userService.getData();})
                 .then(users => {
                     render(users);
                     form.reset();

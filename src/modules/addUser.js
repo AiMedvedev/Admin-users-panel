@@ -17,12 +17,11 @@ export const addUser = () => {
                 permissions: false  
             };
     
-            userService.addUser(user)
-            .then(() => {
-                userService.getUsers()
-                .then(users => {
+            userService.sendData('POST', user, 'http://localhost:3232/users').then(() => {
+                userService.getData().then(users => {
                     render(users);
-                    form.reset();});
+                    form.reset();
+                });
             });
         }    
     });   

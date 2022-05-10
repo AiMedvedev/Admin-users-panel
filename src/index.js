@@ -10,7 +10,7 @@ import { searchUsers } from "./modules/searchUsers";
 
 window.userService = new UserService;
 
-userService.getUsers().then(data => render(data));
+userService.getData().then(data => render(data));
 
 addUser();
 removeUsers();

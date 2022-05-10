@@ -4,6 +4,13 @@
       "name": "Alex",
       "email": "alex@alex.com",
       "children": true,
+      "permissions": false,
+      "id": 1
+    },
+    {
+      "name": "Alex2",
+      "email": "cxcx@qwqw",
+      "children": false,
       "permissions": true,
       "id": 2
     },
@@ -12,21 +19,7 @@
       "email": "ffg@ere",
       "children": true,
       "permissions": false,
-      "id": 5
-    },
-    {
-      "name": "Alex1",
-      "email": "alex@alex.com",
-      "children": false,
-      "permissions": false,
-      "id": 6
-    },
-    {
-      "name": "Ivan2",
-      "email": "ffg@ere",
-      "children": false,
-      "permissions": false,
-      "id": 7
+      "id": 3
     }
   ]
 }
