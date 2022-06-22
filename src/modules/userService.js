@@ -1,6 +1,7 @@
 export class UserService {
     getData(url = 'http://localhost:3232/users') {
-        return fetch(url).then(res => res.json());
+        return fetch(url)
+        .then(res => res.json())
     }
  
     sendData(method, data, url = 'http://localhost:3232/users') {

@@ -37,12 +37,14 @@ export const editUsers = () => {
             
             userService.sendData('PUT', user, `http://localhost:3232/users/${id}`)
             .then(() => {
-                userService.getData();})
-                .then(users => {
-                    render(users);
-                    form.reset();
-                    form.removeAttribute('data-method');
+                form.removeAttribute('data-method');
             });
-        }    
+        }
+        
+        userService.getData().
+        then((users) => {
+            render(users);
+            form.reset();
+        });
     }); 
 };
