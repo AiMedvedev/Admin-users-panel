@@ -4,7 +4,7 @@
       "name": "Alex",
       "email": "alex@alex.com",
       "children": true,
-      "permissions": false,
+      "permissions": true,
       "id": 1
     },
     {
